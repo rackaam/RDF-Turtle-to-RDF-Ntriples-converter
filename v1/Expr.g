@@ -14,9 +14,7 @@ doc	:
 	
 phrases	:	
 	phrase phrases | ;
-	
-	
-	
+
 phrase 	: sujet verbesobjets[$sujet.name] '.';
 
 sujet	returns [String name]:	
@@ -27,11 +25,14 @@ verbe	returns [String name]:
 	
 verbesobjets[String nomSujet]
 	:	
-	verbe objets[nomSujet, $verbe.name] (';'verbesobjets[nomSujet] | );
+	verbeobjets[nomSujet] (';'verbesobjets[nomSujet] | );
+
+verbeobjets[String nomSujet]
+	:
+	verbe objets[nomSujet, $verbe.name];
 
 objets[String nomSujet, String nomVerbe]:	
-	objet[nomSujet, nomVerbe]','objets[nomSujet, nomVerbe] 
-	| objet[nomSujet, nomVerbe];
+	objet[nomSujet, nomVerbe](','objets[nomSujet, nomVerbe] | );
 	
 objet[String nomSujet, String nomVerbe]	:	
 	entite {System.out.println(nomSujet + " " + nomVerbe + " " + $entite.name + " .");}|text {System.out.println(nomSujet + " " + nomVerbe + " " + $text.name + " .");}
