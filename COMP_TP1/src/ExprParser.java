@@ -1,4 +1,4 @@
-// $ANTLR 3.5.1 /private/student/7/37/13008637/Documents/M1_GL/COMP/Expr.g 2014-10-10 15:52:32
+// $ANTLR 3.5.1 /home/matthias/ISTIC/COMP/tp1/v1/Expr.g 2014-10-12 18:42:59
 
 import java.util.HashMap;
 
@@ -40,7 +40,7 @@ public class ExprParser extends Parser {
 	}
 
 	@Override public String[] getTokenNames() { return ExprParser.tokenNames; }
-	@Override public String getGrammarFileName() { return "/private/student/7/37/13008637/Documents/M1_GL/COMP/Expr.g"; }
+	@Override public String getGrammarFileName() { return "/home/matthias/ISTIC/COMP/tp1/v1/Expr.g"; }
 
 
 	/** Map variable name to Integer object holding value */
@@ -49,11 +49,11 @@ public class ExprParser extends Parser {
 
 
 	// $ANTLR start "doc"
-	// /private/student/7/37/13008637/Documents/M1_GL/COMP/Expr.g:12:1: doc : phrases ;
+	// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:12:1: doc : phrases ;
 	public final void doc() throws RecognitionException {
 		try {
-			// /private/student/7/37/13008637/Documents/M1_GL/COMP/Expr.g:12:5: ( phrases )
-			// /private/student/7/37/13008637/Documents/M1_GL/COMP/Expr.g:13:2: phrases
+			// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:12:5: ( phrases )
+			// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:13:2: phrases
 			{
 			pushFollow(FOLLOW_phrases_in_doc24);
 			phrases();
@@ -75,10 +75,10 @@ public class ExprParser extends Parser {
 
 
 	// $ANTLR start "phrases"
-	// /private/student/7/37/13008637/Documents/M1_GL/COMP/Expr.g:15:1: phrases : ( phrase phrases |);
+	// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:15:1: phrases : ( phrase phrases |);
 	public final void phrases() throws RecognitionException {
 		try {
-			// /private/student/7/37/13008637/Documents/M1_GL/COMP/Expr.g:15:9: ( phrase phrases |)
+			// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:15:9: ( phrase phrases |)
 			int alt1=2;
 			int LA1_0 = input.LA(1);
 			if ( (LA1_0==10) ) {
@@ -96,7 +96,7 @@ public class ExprParser extends Parser {
 
 			switch (alt1) {
 				case 1 :
-					// /private/student/7/37/13008637/Documents/M1_GL/COMP/Expr.g:16:2: phrase phrases
+					// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:16:2: phrase phrases
 					{
 					pushFollow(FOLLOW_phrase_in_phrases35);
 					phrase();
@@ -109,7 +109,7 @@ public class ExprParser extends Parser {
 					}
 					break;
 				case 2 :
-					// /private/student/7/37/13008637/Documents/M1_GL/COMP/Expr.g:16:19: 
+					// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:16:19: 
 					{
 					}
 					break;
@@ -129,23 +129,23 @@ public class ExprParser extends Parser {
 
 
 	// $ANTLR start "phrase"
-	// /private/student/7/37/13008637/Documents/M1_GL/COMP/Expr.g:20:1: phrase : sujet verbesobjets[$sujet.name] '.' ;
+	// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:18:1: phrase : sujet verbesobjets[$sujet.name] '.' ;
 	public final void phrase() throws RecognitionException {
 		String sujet1 =null;
 
 		try {
-			// /private/student/7/37/13008637/Documents/M1_GL/COMP/Expr.g:20:9: ( sujet verbesobjets[$sujet.name] '.' )
-			// /private/student/7/37/13008637/Documents/M1_GL/COMP/Expr.g:20:11: sujet verbesobjets[$sujet.name] '.'
+			// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:18:9: ( sujet verbesobjets[$sujet.name] '.' )
+			// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:18:11: sujet verbesobjets[$sujet.name] '.'
 			{
-			pushFollow(FOLLOW_sujet_in_phrase54);
+			pushFollow(FOLLOW_sujet_in_phrase49);
 			sujet1=sujet();
 			state._fsp--;
 
-			pushFollow(FOLLOW_verbesobjets_in_phrase56);
+			pushFollow(FOLLOW_verbesobjets_in_phrase51);
 			verbesobjets(sujet1);
 			state._fsp--;
 
-			match(input,8,FOLLOW_8_in_phrase59); 
+			match(input,8,FOLLOW_8_in_phrase54); 
 			}
 
 		}
@@ -162,7 +162,7 @@ public class ExprParser extends Parser {
 
 
 	// $ANTLR start "sujet"
-	// /private/student/7/37/13008637/Documents/M1_GL/COMP/Expr.g:22:1: sujet returns [String name] : entite ;
+	// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:20:1: sujet returns [String name] : entite ;
 	public final String sujet() throws RecognitionException {
 		String name = null;
 
@@ -170,10 +170,10 @@ public class ExprParser extends Parser {
 		String entite2 =null;
 
 		try {
-			// /private/student/7/37/13008637/Documents/M1_GL/COMP/Expr.g:22:28: ( entite )
-			// /private/student/7/37/13008637/Documents/M1_GL/COMP/Expr.g:23:2: entite
+			// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:20:28: ( entite )
+			// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:21:2: entite
 			{
-			pushFollow(FOLLOW_entite_in_sujet72);
+			pushFollow(FOLLOW_entite_in_sujet67);
 			entite2=entite();
 			state._fsp--;
 
@@ -195,7 +195,7 @@ public class ExprParser extends Parser {
 
 
 	// $ANTLR start "verbe"
-	// /private/student/7/37/13008637/Documents/M1_GL/COMP/Expr.g:25:1: verbe returns [String name] : entite ;
+	// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:23:1: verbe returns [String name] : entite ;
 	public final String verbe() throws RecognitionException {
 		String name = null;
 
@@ -203,10 +203,10 @@ public class ExprParser extends Parser {
 		String entite3 =null;
 
 		try {
-			// /private/student/7/37/13008637/Documents/M1_GL/COMP/Expr.g:25:28: ( entite )
-			// /private/student/7/37/13008637/Documents/M1_GL/COMP/Expr.g:26:2: entite
+			// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:23:28: ( entite )
+			// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:24:2: entite
 			{
-			pushFollow(FOLLOW_entite_in_verbe88);
+			pushFollow(FOLLOW_entite_in_verbe83);
 			entite3=entite();
 			state._fsp--;
 
@@ -228,23 +228,17 @@ public class ExprParser extends Parser {
 
 
 	// $ANTLR start "verbesobjets"
-	// /private/student/7/37/13008637/Documents/M1_GL/COMP/Expr.g:28:1: verbesobjets[String nomSujet] : verbe objets[nomSujet, $verbe.name] ( ';' verbesobjets[nomSujet] |) ;
+	// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:26:1: verbesobjets[String nomSujet] : verbeobjets[nomSujet] ( ';' verbesobjets[nomSujet] |) ;
 	public final void verbesobjets(String nomSujet) throws RecognitionException {
-		String verbe4 =null;
-
 		try {
-			// /private/student/7/37/13008637/Documents/M1_GL/COMP/Expr.g:29:2: ( verbe objets[nomSujet, $verbe.name] ( ';' verbesobjets[nomSujet] |) )
-			// /private/student/7/37/13008637/Documents/M1_GL/COMP/Expr.g:30:2: verbe objets[nomSujet, $verbe.name] ( ';' verbesobjets[nomSujet] |)
+			// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:27:2: ( verbeobjets[nomSujet] ( ';' verbesobjets[nomSujet] |) )
+			// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:28:2: verbeobjets[nomSujet] ( ';' verbesobjets[nomSujet] |)
 			{
-			pushFollow(FOLLOW_verbe_in_verbesobjets103);
-			verbe4=verbe();
+			pushFollow(FOLLOW_verbeobjets_in_verbesobjets98);
+			verbeobjets(nomSujet);
 			state._fsp--;
 
-			pushFollow(FOLLOW_objets_in_verbesobjets105);
-			objets(nomSujet, verbe4);
-			state._fsp--;
-
-			// /private/student/7/37/13008637/Documents/M1_GL/COMP/Expr.g:30:38: ( ';' verbesobjets[nomSujet] |)
+			// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:28:24: ( ';' verbesobjets[nomSujet] |)
 			int alt2=2;
 			int LA2_0 = input.LA(1);
 			if ( (LA2_0==9) ) {
@@ -262,17 +256,17 @@ public class ExprParser extends Parser {
 
 			switch (alt2) {
 				case 1 :
-					// /private/student/7/37/13008637/Documents/M1_GL/COMP/Expr.g:30:39: ';' verbesobjets[nomSujet]
+					// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:28:25: ';' verbesobjets[nomSujet]
 					{
-					match(input,9,FOLLOW_9_in_verbesobjets109); 
-					pushFollow(FOLLOW_verbesobjets_in_verbesobjets110);
+					match(input,9,FOLLOW_9_in_verbesobjets102); 
+					pushFollow(FOLLOW_verbesobjets_in_verbesobjets103);
 					verbesobjets(nomSujet);
 					state._fsp--;
 
 					}
 					break;
 				case 2 :
-					// /private/student/7/37/13008637/Documents/M1_GL/COMP/Expr.g:30:67: 
+					// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:28:53: 
 					{
 					}
 					break;
@@ -294,128 +288,57 @@ public class ExprParser extends Parser {
 
 
 
-	// $ANTLR start "objets"
-	// /private/student/7/37/13008637/Documents/M1_GL/COMP/Expr.g:32:1: objets[String nomSujet, String nomVerbe] : ( objet[nomSujet, nomVerbe] ',' objets[nomSujet, nomVerbe] | objet[nomSujet, nomVerbe] );
-	public final void objets(String nomSujet, String nomVerbe) throws RecognitionException {
+	// $ANTLR start "verbeobjets"
+	// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:30:1: verbeobjets[String nomSujet] : verbe objets[nomSujet, $verbe.name] ;
+	public final void verbeobjets(String nomSujet) throws RecognitionException {
+		String verbe4 =null;
+
 		try {
-			// /private/student/7/37/13008637/Documents/M1_GL/COMP/Expr.g:32:41: ( objet[nomSujet, nomVerbe] ',' objets[nomSujet, nomVerbe] | objet[nomSujet, nomVerbe] )
-			int alt3=2;
-			int LA3_0 = input.LA(1);
-			if ( (LA3_0==10) ) {
-				int LA3_1 = input.LA(2);
-				if ( (LA3_1==ID) ) {
-					int LA3_3 = input.LA(3);
-					if ( (LA3_3==11) ) {
-						int LA3_5 = input.LA(4);
-						if ( (LA3_5==7) ) {
-							alt3=1;
-						}
-						else if ( ((LA3_5 >= 8 && LA3_5 <= 9)) ) {
-							alt3=2;
-						}
+			// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:31:2: ( verbe objets[nomSujet, $verbe.name] )
+			// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:32:2: verbe objets[nomSujet, $verbe.name]
+			{
+			pushFollow(FOLLOW_verbe_in_verbeobjets119);
+			verbe4=verbe();
+			state._fsp--;
 
-						else {
-							int nvaeMark = input.mark();
-							try {
-								for (int nvaeConsume = 0; nvaeConsume < 4 - 1; nvaeConsume++) {
-									input.consume();
-								}
-								NoViableAltException nvae =
-									new NoViableAltException("", 3, 5, input);
-								throw nvae;
-							} finally {
-								input.rewind(nvaeMark);
-							}
-						}
-
-					}
-
-					else {
-						int nvaeMark = input.mark();
-						try {
-							for (int nvaeConsume = 0; nvaeConsume < 3 - 1; nvaeConsume++) {
-								input.consume();
-							}
-							NoViableAltException nvae =
-								new NoViableAltException("", 3, 3, input);
-							throw nvae;
-						} finally {
-							input.rewind(nvaeMark);
-						}
-					}
-
-				}
-
-				else {
-					int nvaeMark = input.mark();
-					try {
-						input.consume();
-						NoViableAltException nvae =
-							new NoViableAltException("", 3, 1, input);
-						throw nvae;
-					} finally {
-						input.rewind(nvaeMark);
-					}
-				}
+			pushFollow(FOLLOW_objets_in_verbeobjets121);
+			objets(nomSujet, verbe4);
+			state._fsp--;
 
 			}
-			else if ( (LA3_0==6) ) {
-				int LA3_2 = input.LA(2);
-				if ( (LA3_2==ID) ) {
-					int LA3_4 = input.LA(3);
-					if ( (LA3_4==6) ) {
-						int LA3_6 = input.LA(4);
-						if ( (LA3_6==7) ) {
-							alt3=1;
-						}
-						else if ( ((LA3_6 >= 8 && LA3_6 <= 9)) ) {
-							alt3=2;
-						}
 
-						else {
-							int nvaeMark = input.mark();
-							try {
-								for (int nvaeConsume = 0; nvaeConsume < 4 - 1; nvaeConsume++) {
-									input.consume();
-								}
-								NoViableAltException nvae =
-									new NoViableAltException("", 3, 6, input);
-								throw nvae;
-							} finally {
-								input.rewind(nvaeMark);
-							}
-						}
+		}
+		catch (RecognitionException re) {
+			reportError(re);
+			recover(input,re);
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "verbeobjets"
 
-					}
 
-					else {
-						int nvaeMark = input.mark();
-						try {
-							for (int nvaeConsume = 0; nvaeConsume < 3 - 1; nvaeConsume++) {
-								input.consume();
-							}
-							NoViableAltException nvae =
-								new NoViableAltException("", 3, 4, input);
-							throw nvae;
-						} finally {
-							input.rewind(nvaeMark);
-						}
-					}
 
-				}
+	// $ANTLR start "objets"
+	// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:34:1: objets[String nomSujet, String nomVerbe] : objet[nomSujet, nomVerbe] ( ',' objets[nomSujet, nomVerbe] |) ;
+	public final void objets(String nomSujet, String nomVerbe) throws RecognitionException {
+		try {
+			// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:34:41: ( objet[nomSujet, nomVerbe] ( ',' objets[nomSujet, nomVerbe] |) )
+			// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:35:2: objet[nomSujet, nomVerbe] ( ',' objets[nomSujet, nomVerbe] |)
+			{
+			pushFollow(FOLLOW_objet_in_objets132);
+			objet(nomSujet, nomVerbe);
+			state._fsp--;
 
-				else {
-					int nvaeMark = input.mark();
-					try {
-						input.consume();
-						NoViableAltException nvae =
-							new NoViableAltException("", 3, 2, input);
-						throw nvae;
-					} finally {
-						input.rewind(nvaeMark);
-					}
-				}
-
+			// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:35:27: ( ',' objets[nomSujet, nomVerbe] |)
+			int alt3=2;
+			int LA3_0 = input.LA(1);
+			if ( (LA3_0==7) ) {
+				alt3=1;
+			}
+			else if ( ((LA3_0 >= 8 && LA3_0 <= 9)) ) {
+				alt3=2;
 			}
 
 			else {
@@ -426,30 +349,25 @@ public class ExprParser extends Parser {
 
 			switch (alt3) {
 				case 1 :
-					// /private/student/7/37/13008637/Documents/M1_GL/COMP/Expr.g:33:2: objet[nomSujet, nomVerbe] ',' objets[nomSujet, nomVerbe]
+					// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:35:28: ',' objets[nomSujet, nomVerbe]
 					{
-					pushFollow(FOLLOW_objet_in_objets125);
-					objet(nomSujet, nomVerbe);
-					state._fsp--;
-
-					match(input,7,FOLLOW_7_in_objets127); 
-					pushFollow(FOLLOW_objets_in_objets128);
+					match(input,7,FOLLOW_7_in_objets135); 
+					pushFollow(FOLLOW_objets_in_objets136);
 					objets(nomSujet, nomVerbe);
 					state._fsp--;
 
 					}
 					break;
 				case 2 :
-					// /private/student/7/37/13008637/Documents/M1_GL/COMP/Expr.g:34:4: objet[nomSujet, nomVerbe]
+					// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:35:60: 
 					{
-					pushFollow(FOLLOW_objet_in_objets135);
-					objet(nomSujet, nomVerbe);
-					state._fsp--;
-
 					}
 					break;
 
 			}
+
+			}
+
 		}
 		catch (RecognitionException re) {
 			reportError(re);
@@ -464,13 +382,13 @@ public class ExprParser extends Parser {
 
 
 	// $ANTLR start "objet"
-	// /private/student/7/37/13008637/Documents/M1_GL/COMP/Expr.g:36:1: objet[String nomSujet, String nomVerbe] : ( entite | text );
+	// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:37:1: objet[String nomSujet, String nomVerbe] : ( entite | text );
 	public final void objet(String nomSujet, String nomVerbe) throws RecognitionException {
 		String entite5 =null;
 		String text6 =null;
 
 		try {
-			// /private/student/7/37/13008637/Documents/M1_GL/COMP/Expr.g:36:41: ( entite | text )
+			// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:37:41: ( entite | text )
 			int alt4=2;
 			int LA4_0 = input.LA(1);
 			if ( (LA4_0==10) ) {
@@ -488,9 +406,9 @@ public class ExprParser extends Parser {
 
 			switch (alt4) {
 				case 1 :
-					// /private/student/7/37/13008637/Documents/M1_GL/COMP/Expr.g:37:2: entite
+					// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:38:2: entite
 					{
-					pushFollow(FOLLOW_entite_in_objet148);
+					pushFollow(FOLLOW_entite_in_objet153);
 					entite5=entite();
 					state._fsp--;
 
@@ -498,9 +416,9 @@ public class ExprParser extends Parser {
 					}
 					break;
 				case 2 :
-					// /private/student/7/37/13008637/Documents/M1_GL/COMP/Expr.g:37:86: text
+					// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:38:86: text
 					{
-					pushFollow(FOLLOW_text_in_objet152);
+					pushFollow(FOLLOW_text_in_objet157);
 					text6=text();
 					state._fsp--;
 
@@ -523,7 +441,7 @@ public class ExprParser extends Parser {
 
 
 	// $ANTLR start "entite"
-	// /private/student/7/37/13008637/Documents/M1_GL/COMP/Expr.g:40:1: entite returns [String name] : '<' ID '>' ;
+	// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:41:1: entite returns [String name] : '<' ID '>' ;
 	public final String entite() throws RecognitionException {
 		String name = null;
 
@@ -531,12 +449,12 @@ public class ExprParser extends Parser {
 		Token ID7=null;
 
 		try {
-			// /private/student/7/37/13008637/Documents/M1_GL/COMP/Expr.g:41:2: ( '<' ID '>' )
-			// /private/student/7/37/13008637/Documents/M1_GL/COMP/Expr.g:41:3: '<' ID '>'
+			// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:42:2: ( '<' ID '>' )
+			// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:42:3: '<' ID '>'
 			{
-			match(input,10,FOLLOW_10_in_entite169); 
-			ID7=(Token)match(input,ID,FOLLOW_ID_in_entite170); 
-			match(input,11,FOLLOW_11_in_entite171); 
+			match(input,10,FOLLOW_10_in_entite174); 
+			ID7=(Token)match(input,ID,FOLLOW_ID_in_entite175); 
+			match(input,11,FOLLOW_11_in_entite176); 
 			name = '<' + (ID7!=null?ID7.getText():null) + '>';
 			}
 
@@ -555,7 +473,7 @@ public class ExprParser extends Parser {
 
 
 	// $ANTLR start "text"
-	// /private/student/7/37/13008637/Documents/M1_GL/COMP/Expr.g:44:1: text returns [String name] : '\"' ID '\"' ;
+	// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:45:1: text returns [String name] : '\"' ID '\"' ;
 	public final String text() throws RecognitionException {
 		String name = null;
 
@@ -563,12 +481,12 @@ public class ExprParser extends Parser {
 		Token ID8=null;
 
 		try {
-			// /private/student/7/37/13008637/Documents/M1_GL/COMP/Expr.g:45:6: ( '\"' ID '\"' )
-			// /private/student/7/37/13008637/Documents/M1_GL/COMP/Expr.g:45:7: '\"' ID '\"'
+			// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:46:6: ( '\"' ID '\"' )
+			// /home/matthias/ISTIC/COMP/tp1/v1/Expr.g:46:7: '\"' ID '\"'
 			{
-			match(input,6,FOLLOW_6_in_text193); 
-			ID8=(Token)match(input,ID,FOLLOW_ID_in_text194); 
-			match(input,6,FOLLOW_6_in_text195); 
+			match(input,6,FOLLOW_6_in_text198); 
+			ID8=(Token)match(input,ID,FOLLOW_ID_in_text199); 
+			match(input,6,FOLLOW_6_in_text200); 
 			name = '"' + (ID8!=null?ID8.getText():null) + '"';
 			}
 
@@ -591,25 +509,25 @@ public class ExprParser extends Parser {
 	public static final BitSet FOLLOW_phrases_in_doc24 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_phrase_in_phrases35 = new BitSet(new long[]{0x0000000000000400L});
 	public static final BitSet FOLLOW_phrases_in_phrases37 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_sujet_in_phrase54 = new BitSet(new long[]{0x0000000000000400L});
-	public static final BitSet FOLLOW_verbesobjets_in_phrase56 = new BitSet(new long[]{0x0000000000000100L});
-	public static final BitSet FOLLOW_8_in_phrase59 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_entite_in_sujet72 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_entite_in_verbe88 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_verbe_in_verbesobjets103 = new BitSet(new long[]{0x0000000000000440L});
-	public static final BitSet FOLLOW_objets_in_verbesobjets105 = new BitSet(new long[]{0x0000000000000202L});
-	public static final BitSet FOLLOW_9_in_verbesobjets109 = new BitSet(new long[]{0x0000000000000400L});
-	public static final BitSet FOLLOW_verbesobjets_in_verbesobjets110 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_objet_in_objets125 = new BitSet(new long[]{0x0000000000000080L});
-	public static final BitSet FOLLOW_7_in_objets127 = new BitSet(new long[]{0x0000000000000440L});
-	public static final BitSet FOLLOW_objets_in_objets128 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_objet_in_objets135 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_entite_in_objet148 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_text_in_objet152 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_10_in_entite169 = new BitSet(new long[]{0x0000000000000010L});
-	public static final BitSet FOLLOW_ID_in_entite170 = new BitSet(new long[]{0x0000000000000800L});
-	public static final BitSet FOLLOW_11_in_entite171 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_6_in_text193 = new BitSet(new long[]{0x0000000000000010L});
-	public static final BitSet FOLLOW_ID_in_text194 = new BitSet(new long[]{0x0000000000000040L});
-	public static final BitSet FOLLOW_6_in_text195 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_sujet_in_phrase49 = new BitSet(new long[]{0x0000000000000400L});
+	public static final BitSet FOLLOW_verbesobjets_in_phrase51 = new BitSet(new long[]{0x0000000000000100L});
+	public static final BitSet FOLLOW_8_in_phrase54 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_entite_in_sujet67 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_entite_in_verbe83 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_verbeobjets_in_verbesobjets98 = new BitSet(new long[]{0x0000000000000202L});
+	public static final BitSet FOLLOW_9_in_verbesobjets102 = new BitSet(new long[]{0x0000000000000400L});
+	public static final BitSet FOLLOW_verbesobjets_in_verbesobjets103 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_verbe_in_verbeobjets119 = new BitSet(new long[]{0x0000000000000440L});
+	public static final BitSet FOLLOW_objets_in_verbeobjets121 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_objet_in_objets132 = new BitSet(new long[]{0x0000000000000082L});
+	public static final BitSet FOLLOW_7_in_objets135 = new BitSet(new long[]{0x0000000000000440L});
+	public static final BitSet FOLLOW_objets_in_objets136 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_entite_in_objet153 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_text_in_objet157 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_10_in_entite174 = new BitSet(new long[]{0x0000000000000010L});
+	public static final BitSet FOLLOW_ID_in_entite175 = new BitSet(new long[]{0x0000000000000800L});
+	public static final BitSet FOLLOW_11_in_entite176 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_6_in_text198 = new BitSet(new long[]{0x0000000000000010L});
+	public static final BitSet FOLLOW_ID_in_text199 = new BitSet(new long[]{0x0000000000000040L});
+	public static final BitSet FOLLOW_6_in_text200 = new BitSet(new long[]{0x0000000000000002L});
 }
