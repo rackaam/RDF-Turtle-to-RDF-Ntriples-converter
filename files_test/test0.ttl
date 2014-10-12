@@ -1,0 +1,6 @@
+<poly117>
+	<type> <poly>;
+	<auteur> <Ridoux>, <Ferre>;
+	<titre> "Compilation" .
+<Ridoux> <type> <personne>, <professeur> .
+
