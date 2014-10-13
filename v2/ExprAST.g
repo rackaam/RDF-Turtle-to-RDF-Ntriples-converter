@@ -23,9 +23,7 @@ HashMap memory = new HashMap();
 }
 
 
-
-
-doc	:	
+doc	:
 	phrases -> ^(Doc phrases);
 	
 phrases	:	
@@ -33,38 +31,38 @@ phrases	:
 	
 	
 	
-phrase 	: sujet verbesobjets[$sujet.name] '.' -> ^(S sujet (verbesobjets)+)
+phrase 	: sujet verbesobjets '.' -> ^(S sujet (verbesobjets)+)
 	;
 
-sujet	returns [String name]:	
-	entite {$name = $entite.name;};
+sujet:	
+	entite ;
 	
-verbe	returns [String name]:	
-	entite {$name = $entite.name;};
+verbe	:	
+	entite;
 	
-verbesobjets[String nomSujet]
+verbesobjets
 	:	
-	verbeobjets[nomSujet] (';'!verbesobjets[nomSujet] | );
+	verbeobjets (';'!verbesobjets | );
 
-verbeobjets[String nomSujet]
+verbeobjets
 	:
-	verbe objets[nomSujet, $verbe.name]-> ^(P verbe objets);
+	verbe objets -> ^(P verbe objets);
 
-objets[String nomSujet, String nomVerbe]:	
-	objet[nomSujet, nomVerbe]','!objets[nomSujet, nomVerbe] 
-	| objet[nomSujet, nomVerbe];
+objets:	
+	objet','!objets 
+	| objet;
 	
-objet[String nomSujet, String nomVerbe]	:	
-	entite {System.out.println(nomSujet + " " + nomVerbe + " " + $entite.name + " .");} -> ^(O entite)
-	|text {System.out.println(nomSujet + " " + nomVerbe + " " + $text.name + " .");} -> ^(O text)
+objet:	
+	entite  -> ^(O entite)
+	|text  -> ^(O text)
 	;
 	
-entite returns [String name]
-	:'<'ID'>' {$name = '<' + $ID.text + '>';}
+entite
+	:'<'ID'>'
 	; 
 	
-text returns [String name]
-    	:'"'ID'"' {$name ='"' + $ID.text + '"';}
+text
+    	:'"'ID'"'
     	;
 
 WS  :   (' '|'\t' | '\n' | '\r')+ {skip();} ;
