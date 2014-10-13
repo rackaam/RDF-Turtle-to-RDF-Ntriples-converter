@@ -14,7 +14,7 @@ public class Main {
         parser.doc();*/
     	
     	// v2
-        ANTLRInputStream input = new ANTLRInputStream(System.in);
+        /*ANTLRInputStream input = new ANTLRInputStream(System.in);
         ExprASTLexer lexer = new ExprASTLexer(input);
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         ExprASTParser parser = new ExprASTParser(tokens);
@@ -23,6 +23,18 @@ public class Main {
         CommonTree t = (CommonTree)r.getTree();
         CommonTreeNodeStream nodes = new CommonTreeNodeStream(t);
         ExprASTWalker walker = new ExprASTWalker(nodes);
+        walker.doc();*/
+        
+    	// v2.1
+        ANTLRInputStream input = new ANTLRInputStream(System.in);
+        ExprASTLexer lexer = new ExprASTLexer(input);
+        CommonTokenStream tokens = new CommonTokenStream(lexer);
+        ExprASTParser parser = new ExprASTParser(tokens);
+        ExprASTParser.doc_return r = parser.doc();
+        
+        CommonTree t = (CommonTree)r.getTree();
+        CommonTreeNodeStream nodes = new CommonTreeNodeStream(t);
+        ExprASTWalkerNbDescription walker = new ExprASTWalkerNbDescription(nodes);
         walker.doc();
     }
 }
